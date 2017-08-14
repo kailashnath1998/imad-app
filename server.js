@@ -24,7 +24,7 @@ app.get('/aone', function (req, res) {
 });
 
 app.get('/resetc', function (req, res) {
-  conter=0;
+  counter=0;
   res.send('sucess');
 });
 
