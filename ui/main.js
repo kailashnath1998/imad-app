@@ -18,7 +18,7 @@ img.onclick = function() {
 };
 
 button.onclick = function() {
-      /*console.log('Clicked');
+      console.log('Clicked');
       var request = new XMLHttpRequest();
       console.log('request created');
       request.onreadystatechage = function() {
@@ -27,20 +27,20 @@ button.onclick = function() {
             if(request.status === 200){
                 //console.log('Status 200');
                 var c = request.responseText;
-                var span = document.getElementById('count');
+                var span = document.getElementById('number');
                 //console.log(span);
-                span.innerHTML = c.toString();
+                span.innerHTML = c;
             }        
         }
       };
       
       request.open('GET', 'http://kailashnath1998.imad.hasura-app.io/counter', true);
       request.send(null);
-      //console.log('request sent');*/
-      counter++;
+      //console.log('request sent');
+      /*counter++;
       console.log(counter.toString());
       var span = document.getElementById('number');
       //console.log(span);
-      span.innerHTML = counter.toString();
+      span.innerHTML = counter.toString();*/
 };
 
