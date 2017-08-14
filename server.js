@@ -23,6 +23,10 @@ app.get('/aone', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'aone.html'));
 });
 
+app.get('/resetc', function (req, res) {
+  conter=0;
+});
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
