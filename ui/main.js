@@ -2,6 +2,7 @@ console.log('Loaded!');
 
 var img = document.getElementById('img');
 var button = document.getElementById('counter');
+var counter = 0;
 
 var marginLeft = 0;
 var counter = 0;
@@ -17,7 +18,7 @@ img.onclick = function() {
 };
 
 button.onclick = function() {
-      console.log('Clicked');
+      /*console.log('Clicked');
       var request = new XMLHttpRequest();
       console.log('request created');
       request.onreadystatechage = function() {
@@ -35,6 +36,10 @@ button.onclick = function() {
       
       request.open('GET', 'http://kailashnath1998.imad.hasura-app.io/counter', true);
       request.send(null);
-      console.log('request sent');
+      //console.log('request sent');*/
+      counter++;
+      var span = document.getElementById('count');
+      //console.log(span);
+      span.innerHTML = c.toString();
 };
 
