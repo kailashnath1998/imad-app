@@ -90,7 +90,7 @@ var articles = {
     }
 };
 app.get('/:aname', function (req, res) {
-    var an = req.parms.aname;
+    var an = req.params.aname;
     console.log(an);
     res.send(createTemplet(articles[an]));
 });
