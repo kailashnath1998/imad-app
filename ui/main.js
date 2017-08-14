@@ -22,9 +22,9 @@ button.onclick = function() {
       request.onreadystatechage = function() {
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status === 200){
-                var counter = request.responseText;
+                var c = request.responseText;
                 var span = documnet.getElementById('count');
-                span.innerHTML = counter.toString();
+                span.innerHTML = c.toString();
             }        
         }
       };
