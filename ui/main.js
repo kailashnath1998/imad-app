@@ -23,7 +23,7 @@ button.onclick = function() {
       request.onreadystatechange = function() {
         //console.log('satate chage');
         if(request.readyState === XMLHttpRequest.DONE){
-            console.log('Status 200');
+            //console.log('Status 200');
             if(request.status === 200){
                 //console.log('Status 200');
                 var counter = request.responseText;
