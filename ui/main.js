@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 var img = document.getElementById('img');
 var button = document.getElementById('counter');
-var counter = 0;
+var rstbtn = document.getElementById('reset');
 
 var marginLeft = 0;
 
@@ -44,3 +44,19 @@ button.onclick = function() {
       span.innerHTML = counter.toString();*/
 };
 
+rstbtn.onclick = function() {
+    var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function() {
+      if(request.readyState === XMLHtttpRequest.DONE){
+            if(request.status === 200)
+                console.log('reset sucessfull');
+            else
+                colsole.log('error '+ request.status.toString());
+      }
+      
+    };
+    
+    request.open('GET', 'http://kailashnath1998.imad.hasura-app.io/resetc', true);
+    request.send(null);
+};
