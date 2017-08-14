@@ -3,6 +3,7 @@ console.log('Loaded!');
 var img = document.getElementById('img');
 var button = document.getElementById('counter');
 var rstbtn = document.getElementById('reset');
+var submit = document.getElementById('submit');
 
 var marginLeft = 0;
 
@@ -60,4 +61,27 @@ rstbtn.onclick = function() {
     
     request.open('GET', 'http://kailashnath1998.imad.hasura-app.io/resetc', true);
     request.send(null);
+};
+
+submit.onclick = function() {
+    
+    var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function() {
+        if(request.reqdyState === XMLHttpRequest.DONE){
+            if(request.status === 200){
+                var names = request.responseText;
+                var lis = "";
+                names = JSON.parse(names);
+                for(var i=0; i<names.length; i++){
+                    lis+="<li>"+names[i]+"</li>";
+                }
+                var list = document.getElementById('list');
+                list.innerHTML = lis;
+            }
+        }
+    };
+    
+    var nameInput = document.getElementById('name');
+    var name = nameInput.value; 
 };
