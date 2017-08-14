@@ -11,6 +11,10 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
+app.get('/cdisp', function (req, res) {
+  res.send(counter.toString());
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
