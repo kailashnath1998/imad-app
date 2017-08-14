@@ -17,6 +17,18 @@ img.onclick = function() {
 };
 
 button.onclick = function() {
+      var request = new XMLHttpRequest();
       
+      request.onreadystatechage = function() {
+        if(request.readystate === XMLHttpRequest.DONE){
+            if(request.status === 200){
+                var counter = request.responseText;
+                span.innerHTML = counter;
+            }        
+        }
+      };
+      
+      request.open('GET', 'http://kailashnath1998.imad.hasura-app.io/counter');
+      request.send(null);
 };
 
