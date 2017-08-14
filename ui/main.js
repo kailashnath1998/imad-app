@@ -38,7 +38,8 @@ button.onclick = function() {
       request.send(null);
       //console.log('request sent');*/
       counter++;
-      var span = document.getElementById('count');
+      console.log(counter.toString());
+      var span = document.getElementById('number');
       //console.log(span);
       span.innerHTML = c.toString();
 };
