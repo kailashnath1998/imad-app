@@ -17,10 +17,11 @@ img.onclick = function() {
 };
 
 button.onclick = function() {
-      console.log('Clicked');
+      //console.log('Clicked');
       var request = new XMLHttpRequest();
-      console.log('request created');
-      request.onreadystatechage = function() {
+      //console.log('request created');
+      request.onreadystatechange = function() {
+          console.log('satate chage');
         if(request.readyState === XMLHttpRequest.DONE){
             console.log('Status 200');
             if(request.status === 200){
