@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 var img = document.getElementById('img');
 var button = document.getElementById('counter');
-var span = documnet.getElementById('count');
+
 var marginLeft = 0;
 var counter = 0;
 
@@ -23,6 +23,7 @@ button.onclick = function() {
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status === 200){
                 var counter = request.responseText;
+                var span = documnet.getElementById('count');
                 span.innerHTML = counter.toString();
             }        
         }
