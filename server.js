@@ -25,6 +25,7 @@ app.get('/aone', function (req, res) {
 
 app.get('/resetc', function (req, res) {
   conter=0;
+  res.send('sucess');
 });
 
 app.get('/ui/main.js', function (req, res) {
