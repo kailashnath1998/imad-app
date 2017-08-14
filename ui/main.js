@@ -5,7 +5,6 @@ var button = document.getElementById('counter');
 var counter = 0;
 
 var marginLeft = 0;
-var counter = 0;
 
 function moveRight() {
     marginLeft = marginLeft + 10;   
@@ -26,10 +25,10 @@ button.onclick = function() {
             console.log('Status 200');
             if(request.status === 200){
                 //console.log('Status 200');
-                var c = request.responseText;
+                var counter = request.responseText;
                 var span = document.getElementById('number');
                 //console.log(span);
-                span.innerHTML = c;
+                span.innerHTML = counter.toString();
             }        
         }
       };
