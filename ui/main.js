@@ -68,7 +68,7 @@ submit.onclick = function() {
     var request = new XMLHttpRequest();
     
     request.onreadystatechange = function() {
-        if(request.reqdyState === XMLHttpRequest.DONE){
+        if(request.readyState === XMLHttpRequest.DONE){
             if(request.status === 200){
                 console.log('in');
                 var names = request.responseText;
