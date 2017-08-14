@@ -21,8 +21,9 @@ button.onclick = function() {
       
       request.onreadystatechage = function() {
         if(request.readyState === XMLHttpRequest.DONE){
+            console.log('Status 200');
             if(request.status === 200){
-                console.log('Status 200');
+                //console.log('Status 200');
                 var c = request.responseText;
                 var span = document.getElementById('count');
                 //console.log(span);
