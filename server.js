@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/aone', function (req, res) {
-  res.send('under construction');
+  res.sendFile(path.join(__dirname, 'ui', 'aone.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
