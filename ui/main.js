@@ -21,7 +21,7 @@ button.onclick = function() {
       var request = new XMLHttpRequest();
       //console.log('request created');
       request.onreadystatechange = function() {
-          console.log('satate chage');
+        //console.log('satate chage');
         if(request.readyState === XMLHttpRequest.DONE){
             console.log('Status 200');
             if(request.status === 200){
