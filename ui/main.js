@@ -17,8 +17,9 @@ img.onclick = function() {
 };
 
 button.onclick = function() {
+      console.log('Clicked');
       var request = new XMLHttpRequest();
-      
+      console.log('request created');
       request.onreadystatechage = function() {
         if(request.readyState === XMLHttpRequest.DONE){
             console.log('Status 200');
