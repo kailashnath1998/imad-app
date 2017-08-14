@@ -41,6 +41,6 @@ button.onclick = function() {
       console.log(counter.toString());
       var span = document.getElementById('number');
       //console.log(span);
-      span.innerHTML = c.toString();
+      span.innerHTML = counter.toString();
 };
 
