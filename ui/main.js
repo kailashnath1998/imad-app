@@ -24,7 +24,7 @@ button.onclick = function() {
             if(request.status === 200){
                 var c = request.responseText;
                 var span = documnet.getElementById('count');
-                console.log(span);
+                console.log(span.innerHTML);
                 span.innerHTML = c.toString();
             }        
         }
