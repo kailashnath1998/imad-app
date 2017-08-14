@@ -23,7 +23,7 @@ button.onclick = function() {
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status === 200){
                 var c = request.responseText;
-                var span = documnet.getElementById('count');
+                var span = document.getElementById('count');
                 console.log(span.innerHTML);
                 span.innerHTML = c.toString();
             }        
